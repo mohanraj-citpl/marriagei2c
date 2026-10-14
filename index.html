@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="You are invited to the wedding of Thazeen Afshan and Syed Adam on 25 October 2026 at Vidhya Maahal, Mahabalipuram."
+    />
+    <meta name="theme-color" content="#102e28" />
+    <meta property="og:title" content="Thazeen Afshan & Syed Adam" />
+    <meta
+      property="og:description"
+      content="Join us on Sunday, 25 October 2026 at Vidhya Maahal, Mahabalipuram."
+    />
+    <meta property="og:type" content="website" />
+    <title>Thazeen Afshan &amp; Syed Adam</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+      <div class="gate__door gate__door--left" aria-hidden="true"></div>
+      <div class="gate__door gate__door--right" aria-hidden="true"></div>
+      <div class="gate__glow" aria-hidden="true"></div>
+      <div class="gate__panel">
+        <p class="eyebrow">You are invited</p>
+        <h1 id="gate-title">Thazeen <span>&amp;</span> Syed</h1>
+        <p class="gate__date">25 October 2026</p>
+        <button class="seal" id="open-invite" type="button">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <circle cx="60" cy="60" r="54" />
+            <circle cx="60" cy="60" r="44" />
+            <circle cx="60" cy="60" r="36" />
+            <text x="60" y="66">T&amp;A</text>
+          </svg>
+          <span>Open the invitation</span>
+        </button>
+        <p class="gate__place">Vidhya Maahal · Mahabalipuram</p>
+      </div>
+    </div>
+
+    <div class="progress" id="progress" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+      <a class="nav__mark" href="#top">T <span>&amp;</span> A</a>
+      <nav class="nav__links" aria-label="Invitation">
+        <a href="#invitation">Invitation</a>
+        <a href="#day">The day</a>
+        <a href="#venue">Venue</a>
+      </nav>
+      <button class="nav__cal" id="nav-calendar" type="button">Save the date</button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <canvas class="hero__dust" id="dust" aria-hidden="true"></canvas>
+        <div class="hero__arch" aria-hidden="true">
+          <svg viewBox="0 0 640 760" preserveAspectRatio="none">
+            <path d="M40 740 V280 C40 120 160 40 320 40 C480 40 600 120 600 280 V740" />
+            <path d="M78 740 V292 C78 150 184 78 320 78 C456 78 562 150 562 292 V740" />
+          </svg>
+        </div>
+        <div class="hero__copy">
+          <p class="eyebrow hero__eyebrow">The wedding of</p>
+          <h2 class="names">
+            <span class="names__line">Thazeen Afshan</span>
+            <span class="names__amp">&amp;</span>
+            <span class="names__line">Syed Adam</span>
+          </h2>
+          <p class="hero__meta">
+            <span>Sunday, 25 October 2026</span>
+            <span class="dot" aria-hidden="true"></span>
+            <span>Vidhya Maahal, Mahabalipuram</span>
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#day">See the details</a>
+            <button class="btn btn--ghost" id="share" type="button">Share invitation</button>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#invitation">
+          <span>Scroll</span>
+          <i></i>
+        </a>
+      </section>
+
+      <div class="ribbon" aria-hidden="true">
+        <div class="ribbon__track">
+          <p>Thazeen Afshan · Syed Adam · 25 October 2026 · Vidhya Maahal · Mahabalipuram ·</p>
+          <p>Thazeen Afshan · Syed Adam · 25 October 2026 · Vidhya Maahal · Mahabalipuram ·</p>
+        </div>
+      </div>
+
+      <section class="letter" id="invitation">
+        <div class="wrap letter__grid">
+          <div class="reveal">
+            <p class="eyebrow">A note for you</p>
+            <h2>With joy, we invite you to celebrate with us.</h2>
+          </div>
+          <div class="letter__card reveal">
+            <div class="letter__ornament" aria-hidden="true"></div>
+            <p>
+              The honour of your presence is requested at the wedding of
+              <strong>Thazeen Afshan</strong> and <strong>Syed Adam</strong>.
+            </p>
+            <p>
+              Join us as we begin our life together on Sunday, the twenty-fifth of October,
+              two thousand and twenty-six, at Vidhya Maahal, Mahabalipuram.
+            </p>
+            <p class="letter__sign">Thazeen &amp; Syed</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="day" id="day">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="eyebrow">The day</p>
+            <h2>Sunday, 25 October 2026</h2>
+          </div>
+          <div class="day__layout">
+            <article class="date-card reveal">
+              <p class="date-card__month">October</p>
+              <p class="date-card__num">25</p>
+              <p class="date-card__year">2026</p>
+              <p class="date-card__dow">Sunday</p>
+            </article>
+            <div class="countdown reveal" id="countdown" aria-live="polite">
+              <p class="eyebrow">Until we celebrate</p>
+              <div class="countdown__grid">
+                <div><strong data-unit="days">00</strong><span>Days</span></div>
+                <div><strong data-unit="hours">00</strong><span>Hours</span></div>
+                <div><strong data-unit="minutes">00</strong><span>Minutes</span></div>
+                <div><strong data-unit="seconds">00</strong><span>Seconds</span></div>
+              </div>
+              <p class="countdown__note" id="countdown-note">Counting down to 25 October 2026.</p>
+              <button class="btn btn--solid" id="calendar" type="button">Add to calendar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="venue" id="venue">
+        <div class="wrap venue__grid">
+          <div class="reveal">
+            <p class="eyebrow">The place</p>
+            <h2>Vidhya Maahal</h2>
+            <p class="venue__lead">
+              Mahabalipuram, on the Coromandel coast, where stone and sea have shared the same horizon for centuries.
+            </p>
+            <address>
+              Vidhya Maahal<br />
+              Mahabalipuram 603102<br />
+              Tamil Nadu, India
+            </address>
+            <div class="hero__actions">
+              <a
+                class="btn btn--solid"
+                href="https://www.google.com/maps/search/?api=1&amp;query=Vidhya%20Maahal%2C%20Mahabalipuram%20603102"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Open in Maps</a>
+              <button class="btn btn--ghost btn--light" id="copy-address" type="button">Copy address</button>
+            </div>
+            <p class="copy-status" id="copy-status" role="status"></p>
+          </div>
+          <aside class="map-card reveal" aria-label="Venue card">
+            <div class="map-card__pin" aria-hidden="true">
+              <span></span>
+            </div>
+            <p class="map-card__kicker">Celebration</p>
+            <h3>Vidhya Maahal</h3>
+            <p>Mahabalipuram · 603102</p>
+            <div class="map-card__line" aria-hidden="true"></div>
+            <p class="map-card__small">25 October 2026</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="close">
+        <div class="wrap close__inner reveal">
+          <p class="eyebrow">Until then</p>
+          <h2>We cannot wait to see you.</h2>
+          <p>Thazeen Afshan &amp; Syed Adam</p>
+          <button class="btn btn--ink" id="share-bottom" type="button">Share this invitation</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Thazeen Afshan &amp; Syed Adam · 25 October 2026</p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
