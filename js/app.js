@@ -1,5 +1,5 @@
-const weddingStart = new Date("2026-10-25T00:00:00+05:30");
-const address = "Vidhya Maahal, Mahabalipuram 603102, Tamil Nadu, India";
+const weddingStart = new Date("2027-01-12T19:00:00+05:30");
+const address = "Muthamizh Arignar Kalaignar Thirumana Maligai, No.1 Cemetery Road, Royapuram, Chennai, Tamil Nadu, India";
 
 const gate = document.querySelector("#gate");
 const openButton = document.querySelector("#open-invite");
@@ -49,7 +49,7 @@ function updateCountdown() {
     units.seconds.textContent = "00";
     const endOfDay = weddingStart.getTime() + 86400000;
     countdownNote.textContent = now.getTime() < endOfDay
-      ? "Today we celebrate."
+      ? "Today is the Valima."
       : "Thank you for celebrating with us.";
     return;
   }
@@ -72,16 +72,16 @@ function downloadCalendar() {
   const ics = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Thazeen and Syed//Wedding//EN",
+    "PRODID:-//Adam and Tanzeela//Valima//EN",
     "CALSCALE:GREGORIAN",
     "BEGIN:VEVENT",
-    "UID:thazeen-syed-wedding-20261025@invitation",
-    "DTSTAMP:20261014T000000Z",
-    "DTSTART;VALUE=DATE:20261025",
-    "DTEND;VALUE=DATE:20261026",
-    "SUMMARY:Wedding of Thazeen Afshan & Syed Adam",
+    "UID:adam-tanzeela-valima-20270112@invitation",
+    "DTSTAMP:20261020T000000Z",
+    "DTSTART:20270112T133000Z",
+    "DTEND:20270112T163000Z",
+    "SUMMARY:Valima of Syed Adam & Tanzeela Afshan",
     `LOCATION:${address}`,
-    "DESCRIPTION:You are invited to the wedding of Thazeen Afshan and Syed Adam at Vidhya Maahal, Mahabalipuram.",
+    "DESCRIPTION:Valima ceremony of Syed Adam and Tanzeela Afshan at 7:00 PM. Muthamizh Arignar Kalaignar Thirumana Maligai, No.1 Cemetery Road, Royapuram. Reach the hall on MTC bus 6D, alighting at Cemetery Road.",
     "END:VEVENT",
     "END:VCALENDAR",
   ].join("\r\n");
@@ -90,7 +90,7 @@ function downloadCalendar() {
   const url = URL.createObjectURL(file);
   const link = document.createElement("a");
   link.href = url;
-  link.download = "thazeen-and-syed-wedding.ics";
+  link.download = "adam-and-tanzeela-valima.ics";
   link.click();
   URL.revokeObjectURL(url);
   showToast("Calendar file downloaded");
@@ -115,8 +115,8 @@ async function copyText(text) {
 
 async function shareInvitation() {
   const payload = {
-    title: "Thazeen Afshan & Syed Adam",
-    text: "You are invited to the wedding of Thazeen Afshan and Syed Adam on 25 October 2026 at Vidhya Maahal, Mahabalipuram.",
+    title: "Valima of Syed Adam & Tanzeela Afshan",
+    text: "You are invited to the Valima of Syed Adam and Tanzeela Afshan on Tuesday, 12 January 2027 at 7:00 PM, Thirumana Maligai, No.1 Cemetery Road, Royapuram. MTC bus 6D, alight at Cemetery Road.",
     url: window.location.href,
   };
 
